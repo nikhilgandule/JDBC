@@ -58,7 +58,7 @@ IntelliJ IDEA / Eclipse (Recommended IDE)
 
 ⚙️ Installation & Setup
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/JDBC.git
+git clone https://github.com/nikhilgandule/JDBC.git
 cd JDBC
 
 2️⃣ Configure Database
@@ -104,6 +104,7 @@ MySQL server is running
 Database name matches your code
 
 ▶️ Usage Examples
+
 🔹 Insert Data
 Run Insert.java
 
