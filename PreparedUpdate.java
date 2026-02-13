@@ -1,0 +1,44 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class PreparedUpdate {
+
+    private static final String url = "jdbc:mysql://localhost:3306/stud";
+    private static final String username = "root";
+    private static final String password = "1234";
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter id to update marks");
+        int id = sc.nextInt();
+
+        System.out.println("Enter new marks");
+        int mark = sc.nextInt();
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        }catch (ClassNotFoundException ex){
+            System.out.println(ex.getMessage());
+        }
+        try {
+            Connection con = DriverManager.getConnection(url,username,password);
+            PreparedStatement stmt = con.prepareStatement("update stud set mark = ? where id = ?");
+            stmt.setInt(1,mark);
+            stmt.setInt(2,id);
+
+            int set = stmt.executeUpdate();
+
+            if(set > 0){
+                System.out.println("Mark Updated");
+            }else {
+                System.out.println("Not Updated");
+            }
+        }catch (SQLException ex){
+            System.out.println(ex.getMessage());
+        }
+    }
+}
