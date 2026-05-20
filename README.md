@@ -165,7 +165,7 @@ Please ensure your code is clean and well-documented.
 This project is open-source and available under the MIT License.
 You are free to use, modify, and distribute it with proper attribution.
 
-👨‍💻 Author
+👨‍💻 Authors
 
 Nikhil Gandule,
 Kartik Jadhav, 
