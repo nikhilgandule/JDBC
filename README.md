@@ -167,8 +167,8 @@ You are free to use, modify, and distribute it with proper attribution.
 
 👨‍💻 Author
 
-Nikhil Gandule
-Kartik Jadhav 
+Nikhil Gandule,
+Kartik Jadhav, 
 Shruti Tarade
 
 Aspiring Java Full Stack Developer
