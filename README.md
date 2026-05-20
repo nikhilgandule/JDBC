@@ -169,6 +169,7 @@ You are free to use, modify, and distribute it with proper attribution.
 
 Nikhil Gandule,
 Kartik Jadhav, 
-Shruti Tarade
+Shruti Tarade,
+Shivam Thorat
 
 Aspiring Java Full Stack Developer
